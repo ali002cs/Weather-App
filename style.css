@@ -162,3 +162,25 @@ input{
     align-items: center;
 }
 
+.theme-toggle {
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.box.dark-mode {
+    background-image: linear-gradient(to top, #0f0f1a 0%, #1a1a2e 100%);
+}
+
+.box.dark-mode .error p {
+    color: #ff8080;
+}

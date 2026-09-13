@@ -121,3 +121,11 @@ searchBox.addEventListener("keydown", (e) => {
 
 // default city load on page start
 checkWeather("Lahore");
+
+const themeToggle = document.querySelector(".theme-toggle");
+const boxElement = document.querySelector(".box");
+
+themeToggle.addEventListener("click", () => {
+    boxElement.classList.toggle("dark-mode");
+    themeToggle.textContent = boxElement.classList.contains("dark-mode") ? "☀️" : "🌙";
+});
