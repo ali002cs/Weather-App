@@ -88,6 +88,10 @@ async function checkWeather(city) {
                 weatherIcon.src = "clear.png";
         }
 
+        weatherIcon.classList.remove("pop");
+void weatherIcon.offsetWidth;
+weatherIcon.classList.add("pop");
+
         errorBox.style.display = "none";
         mainBox.style.display = "flex";
         footerBox.style.display = "flex";
